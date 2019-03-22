@@ -52,7 +52,7 @@ FROM alpine:latest
 
 RUN \
     apk add --update \
-        ca-certificates libstdc++ libgcc libcurl protobuf libexecinfo
+        ca-certificates libstdc++ libgcc protobuf libexecinfo
 
 COPY --from=builder /usr/local/bin/rethinkdb /usr/local/bin/rethinkdb
 
